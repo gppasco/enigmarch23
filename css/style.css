@@ -1,0 +1,44 @@
+body {
+    padding: 0vh
+}
+
+.container-fluid {
+    border: thin solid grey;
+    border-radius: 5px
+}
+
+
+.header-row {
+    height: 12vh;
+    background: #404E5C;
+}
+
+h1 {
+    color: #CFD7DE
+}
+
+.col-12 {
+    background: #CFD7DE
+}
+
+.puzzle-content {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+}
+
+
+.search-row {
+    padding: 25px;
+}
+
+.footer-row {
+    height: 7vh;
+    background: #404E5C;
+    text-align: center;
+}
+
+a {
+	color: #404E5C;
+	text-decoration: underline;
+}
