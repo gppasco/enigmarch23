@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PUZNESTIWORDNGZLE</title>
+
+		<!-- Load CSS libraries -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+
+		<!-- GOOGLE FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,300italic' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+	<div class="container-fluid">
+		<div class="row justify-content-center header-row">
+			<div class="align-self-center">
+				<h1>Day 2: PUZNESTIWORDNGZLE</h1>
+			</div>
+		</div>
+		<div class="row mid-row">
+			<div class="col-12">
+				<div class="row justify-content-left search-row">
+					<div class="align-self-center">
+						There are lots of nesting birds out there, but my favorites are the turkey, duck, and chicken. <b>The final answer is a single word.</b>
+						<br><br>
+						<a href="https://www.dropbox.com/s/326vwdcx2uvtw0v/Day02PUZNESTIWORDNGZLE.pdf?dl=0" target="_blank">PDF version</a>
+						<br><br>
+						<a href="https://www.callingit.in/1/#nMn5+jeN+I/QKdOT-gfJkNkyypT2dFc0tEBPHXaU7u3TiJw0T-UFVaTkVTVElXT1JETkdaTEU=" target="_blank">Answer Checker</a>
+						<br><br>
+						<a href="index.html">Back to Main Page</a>
+					</div>
+				</div>
+				<hr>
+			</div>
+			<div class="col-12" id="puzzle-contents-copyable">
+
+	<div class="clipboard-only"> There are a lot of nesting birds out there, but my favorites are the turkey, duck and chicken.<br><b>The final answer is a single word.</b><br><br></div>
+
+<ul>
+	<li>Coloring pet store title given to T'challa food brand on car windows</li>
+	<li>Crompton's "city" have text digitization tech. a fancy meal according to "It's Everyday Bro"</li>
+	<li>David who played reaction Sunday Puzzle broadcaster to a cringey joke Tobias Fünke</li>
+	<li>Money Sonic drops them flesh and blood when hurt unit in Vietnam</li>
+	<li>Parts filled by person who's gross little creatures that exterminators target quite brutish casting directors</li>
+	<li>Person word after enter as data Ars in a Horace title in your corner</li>
+	<li>Possible body shop author who wrote about Australian boot brand Fogg project</li>
+	<li>President in wooden element of a backsplash item for a camper the early twentieth century</li>
+	<li>Promote thought while position taken on an issue extinguishing candles with great enthusiasm</li>
+	<li>Restrain as singer and trumpeter possible fandom wiki fodder Baker one's breath</li>
+	<li>Stereotypically slippery sister of Sherri shoot the breeze in Springfield banana part</li>
+	<li>Stuff in vehicle sung ingredient in a rub about by Duke Ellington a trough</li>
+	<li>Vehicle location for drink with a burger Zack and Cody that's hailed</li>
+	<li>Way too Juul product for French menu phrase short tired to function</li>
+	<li>What a animated Lisa of TV journalism movie set in 2805 doozy!</li>
+	<li>Word before at exam Aries zodiac symbol for MBA hopefuls the disco</li>
+	<li>Word hold on there where a villain resides at sea in the pledge of allegiance</li>
+</ul>
+<p style="text-align:center">* * * * *
+<br>
+Military base (6) <br>
+Like some sentences (3) <br>
+NBA player (10) <br>
+Dog (9) <br>
+Party honoree (6) <br>
+Organ (7) <br>
+Traditional number (7) <br>
+With regret (4) <br>
+Like a space cadet (2) <br>
+Phone plan perk (6) <br>
+Beatles song (3) <br>
+British musician (10) <br>
+Sporting venue (6) <br>
+Issue (1) <br>
+Operative (3) <br>
+Royal title (12) <br>
+Business maneuver (8) <br><br></p>
+
+<button id="clipboard-button">
+      <div>
+        <span id="clipboard-message">Copy to clipboard</span>
+      </div>
+    </button>
+			</div>
+
+		</div>
+		<div class="row footer-row"></div>
+		<textarea id="clipboard-contents" readonly></textarea>
+	</div>
+	
+
+
+	<!-- embedding JS libraries -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<!-- d3 -->
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+
+	<!-- own js files -->
+	<script type="text/javascript">
+
+	// Code below thanks to teammate. Thank you teammate!
+	// Source: https://2020.teammatehunt.com/clipboard
+
+    const CLIPBOARD_ONLY_CLASS = 'clipboard-only';
+    const NO_COPY_CLASS = 'no-copy';
+
+    const setMessage = (text) => {
+      let messageElement = document.getElementById("clipboard-message");
+      messageElement.textContent = text;
+    }
+
+    const copyContentsText = (text) => copyContents(
+      {copyableText: text});
+
+    const copyContentsById = (id) => copyContents(
+      {copyableElement: document.getElementById(id)});
+
+    const copyContents = async ({ copyableText, copyableElement }) => {
+      const textareaElement = document.getElementById("clipboard-contents");
+      console.log(textareaElement)
+      const buttonElement = document.getElementById("clipboard-button");
+      // Use \r\n for Windows compatibility
+      copyableText = Array.isArray(copyableText) ? copyableText.join("\r\n") : copyableText;
+      if ("navigator" in window && navigator.clipboard && copyableText) {
+        // Modern navigator API, supports writing text.
+        await navigator.clipboard.writeText(copyableText);
+        setMessage("Copied to clipboard!");
+      } else if (textareaElement) {
+        // Fallback if navigator API is not supported in older browsers, or if
+        // we need to copy actual HTML.
+        if (copyableElement) {
+          // Temporarily unhide any invisible elements.
+          $(copyableElement).find(`.${CLIPBOARD_ONLY_CLASS}`).show();
+          $(copyableElement).find(`.${NO_COPY_CLASS}`).hide();
+          // Handle the selection.
+          if (window.getSelection()) window.getSelection().removeAllRanges();
+          const range = document.createRange();
+          range.selectNode(copyableElement);
+          if (window.getSelection()) window.getSelection().addRange(range);
+          // Hide the button or else will copy itself too
+          if (buttonElement) $(buttonElement).hide();
+          // Command to do the copying
+          document.execCommand("copy");
+          // Show the button again.
+          if (buttonElement) $(buttonElement).show();
+          // Hide invisible elements again.
+          $(copyableElement).find(`.${CLIPBOARD_ONLY_CLASS}`).hide();
+          $(copyableElement).find(`.${NO_COPY_CLASS}`).show();
+        } else {
+          // Temporarily show the textarea so it can be copied.
+          textareaElement.style.display = "block";
+          textareaElement.select();
+          if (buttonElement) $(buttonElement).hide();
+          document.execCommand("copy");
+          if (buttonElement) $(buttonElement).show();
+          textareaElement.style.display = "none";
+        }
+        if (window.getSelection()) window.getSelection().removeAllRanges();
+        setMessage("Copied to clipboard!");
+      } else {
+        setMessage(
+          "Failed to copy to clipboard! Please contact us if you see this error."
+        );
+        return;
+      }
+      setTimeout(() => void setMessage("Copy to Clipboard"), 3000);
+    };
+
+    // Set up event handler to call copy function when the button is clicked
+    document.getElementById("clipboard-button").addEventListener(
+      "click", () => copyContentsById("puzzle-contents-copyable"));
+    // Example where we only want to copy a plaintext (text/plain only, no
+    // text/html) string instead.
+    // document.getElementById("clipboard-button").addEventListener(
+    //   "click", () => copyContentsText("Plain text content to copy."));
+  </script>
+	<script src="js/main.js"></script>
+	</body>
+</html>
