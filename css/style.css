@@ -17,11 +17,11 @@ h1 {
     color: #CFD7DE
 }
 
-.col-12 {
+.col-12, .col-6, .col-4 {
     background: #CFD7DE
 }
 
-.puzzle-content {
+.puzzle-content-centered {
 	margin: auto;
 	width: 50%;
     height:80%;
