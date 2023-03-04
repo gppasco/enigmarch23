@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Got a Light?</title>
+
+		<!-- Load CSS libraries -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+
+		<!-- GOOGLE FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,300italic' rel='stylesheet' type='text/css'>
+
+		<style type="text/css">
+			tr{font-size: 5vh;}
+			td{ width: 9vh; height: 9vh; align:center;}
+			.block {background-color: black;}
+			.image {background-color: black;}
+			img { width:5vh; height:5vh;}
+
+			#flashlight{
+				--Xpos: 50vw;
+				--Ypos: 0vh;
+			}
+
+			#flashlight:before{
+				content:"";
+				display: block;
+				width: 95%;
+				height: 100%;
+				position: absolute;
+				pointer-events: none;
+				background: radial-gradient(
+					circle 9em at var(--Xpos) var(--Ypos),
+					rgba(0,0,0,0),rgba(0,0,0,1)
+					);
+			}
+		</style>
+	</head>
+
+	<body>
+	<div class="container-fluid">
+		<div class="row justify-content-center header-row" style="height: 100px">
+			<div class="align-self-center">
+				<h1>Got a Light?</h1>
+			</div>
+		</div>
+		<div class="row mid-row">
+			<div class="col-12">
+				<div class="row justify-content-left search-row" style="height:200px">
+					<div class="align-self-center">
+						Sorry about this one.
+						<br><br>
+						<a href="https://www.callingit.in/1/#t2L1pWxUbyjIP7+x-+O5UbuTekzVCgq3Kw63iU2zXP8B29f4v-R290IGEgTGlnaHQ/" target="_blank">Answer Checker</a>
+						<br><br>
+						<a href="index.html">Back to Main Page</a>
+					</div>
+				</div>
+				<hr>
+			</div>
+			<div class="col-12 puzzle-content-centered" id="flashlight">
+				<br><i>They're no Gucci lamps, but they'll do. We should really get some more light in here, though...</i><br><br>
+				(Clicking on an image opens it in a new tab) <br><br>
+				<table border="1px black" style="margin:auto">
+				<tr>
+					<td>R</td>
+					<td>A</td>
+					<td>D</td>
+					<td>I</td>
+					<td class="block"></td>
+					<td>A</td>
+					<td>N</td>
+					<td>T</td>
+				</tr>
+				<tr>
+					<td>S</td>
+					<td class="image"><a href="img/puz4img1.png" target="_blank"><img src="img/puz4img1.png"></a></td>
+					<td>H</td>
+					<td>E</td>
+					<td>A</td>
+					<td>T</td>
+					<td class="image"><a href="img/puz4img2.png" target="_blank"><img src="img/puz4img2.png"></a></td>
+					<td>H</td>
+				</tr>
+				<tr>
+					<td class="image"><a href="img/puz4img3.png" target="_blank"><img src="img/puz4img3.png"></a></td>
+					<td>S</td>
+					<td>C</td>
+					<td>O</td>
+					<td>N</td>
+					<td class="block"></td>
+					<td>C</td>
+					<td>E</td>
+				</tr>
+				<tr>
+					<td>O</td>
+					<td class="block"></td>
+					<td>R</td>
+					<td class="image"><a href="img/puz4img4.png" target="_blank"><img src="img/puz4img4.png"></a></td>
+					<td>C</td>
+					<td>H</td>
+					<td>I</td>
+					<td>D</td>
+				</tr>
+				<tr>
+					<td>H</td>
+					<td>A</td>
+					<td>W</td>
+					<td>K</td>
+					<td>E</td>
+					<td class="block"></td>
+					<td>Y</td>
+					<td>E</td>
+				</tr>
+				<tr>
+					<td>A</td>
+					<td>B</td>
+					<td class="image"><a href="img/puz4img5.png" target="_blank"><img src="img/puz4img5.png"></a></td>
+					<td>R</td>
+					<td>I</td>
+					<td>D</td>
+					<td>G</td>
+					<td>E</td>
+				</tr>
+				<tr>
+					<td>W</td>
+					<td>H</td>
+					<td>O</td>
+					<td>S</td>
+					<td class="image"><a href="img/puz4img6.png" target="_blank"><img src="img/puz4img6.png"></a></td>
+					<td>W</td>
+					<td class="image"><a href="img/puz4img7.png" target="_blank"><img src="img/puz4img7.png"></a></td>
+					<td>E</td>
+				</tr>
+				<tr>
+					<td class="block"></td>
+					<td>L</td>
+					<td>A</td>
+					<td>N</td>
+					<td>T</td>
+					<td>E</td>
+					<td>R</td>
+					<td>N</td>
+				</tr>
+				</table>
+				<br><br>
+			</div>
+		</div>
+		<div class="row footer-row"></div>
+	</div>
+	
+
+
+	<!-- embedding JS libraries -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<!-- d3 -->
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+
+	<!-- own js files -->
+	<script src="js/main.js"></script>
+	<script>
+		let mouseX = 0;
+		let mouseY = 0;
+		let flashlight = document.getElementById("flashlight")
+
+		// Is this a touch device?
+		const isTouchDevice = () => {
+		try {
+			document.createEvent("TouchEvent");
+			return true;
+		} catch (e) {
+			return false;
+		}
+		};
+
+		function disableScroll() {
+	    if (window.addEventListener) // older FF
+	    window.addEventListener('DOMMouseScroll', preventDefault, false);
+	    window.onwheel = preventDefault; // modern standard
+	    window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+	    window.ontouchmove = preventDefault; // mobile
+	    document.onkeydown = preventDefaultForScrollKeys;
+}
+
+		function getMousePosition(e){
+			mouseX = !isTouchDevice() ? e.pageX : e.touches[0].pageX;
+			mouseY = !isTouchDevice() ? e.pageY : e.touches[0].pageY
+			flashlight.style.setProperty("--Xpos", mouseX + "px")
+			flashlight.style.setProperty("--Ypos", mouseY - 320 + "px")
+		}
+
+		flashlight.addEventListener("mousemove", getMousePosition)
+		flashlight.addEventListener("touchmove", function(e) {
+			e.preventDefault()
+			getMousePosition(e)
+		})
+
+
+	</script>
+	</body>
+</html>
