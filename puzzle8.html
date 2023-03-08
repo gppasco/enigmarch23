@@ -41,9 +41,25 @@
 				</div>
 				<hr>
 			</div>
-			<div class="col-12 puzzle-content-centered">
+			<div class="col-12 puzzle-content-centered" id="puzzle-contents-copyable">
 				<i>Language!</i><br><br>
 
+				<div class="clipboard-only">In the puzzle, some symbols are red. In the copy-and-paste version, these symbols are in square brackets.<br><br>
+					"I'm sick of this ##%@*<span class="emphasized">[*]</span> Olivia Rodrigo song!"<br>
+				"Someone told me to Google this rule because I didn't think pawns could capture like that... holy #^&@<span class="emphasized">[&]</span>&@^*!"<br>
+				"I can never think of comebacks until it's too #&&&$*#<span class="emphasized">[#]</span>%#&@@%$#& late!"<br>
+				"Tried looking up my favorite author, and it turns out they're using a ^^^##<span class="emphasized">[&]</span>%*^# alias!"<br>
+				"This meal's taking forever! All we've gotten so far is the @^*&#@^*@<span class="emphasized">[$]</span># appetizer!"<br>
+				"I just can't place what's so good about this %#^#&@$&&*<span class="emphasized">[^]</span>$ art!"<br>
+				"These upstart wealthy people are so <span class="emphasized">[^]</span>^**#@*&$@$# tacky!"<br>
+				"I *#*<span class="emphasized">[#]</span>@*#*# hate one-on-one conversation!"<br>
+				"The set design in this movie is so ^$<span class="emphasized">[&]</span>##^&@#^# beautiful!"<br>
+				"So embarrassed by that #@*(<span class="emphasized">[&]</span>@& blunder I made at the party!"<br>
+				"I told my personal assistant I only want garments that &&<span class="emphasized">[#]</span>*@&^&*#& AREN'T made-to-measure!"<br>
+				"The government's <span class="emphasized">[%]</span>@$&&#(#@$&# policy gives too much free rein to the free market!"<br>
+				"To all the haters: I can do whatever I @@&*#@<span class="emphasized">[%]</span>@^@$# want!"<br><br><br></div>
+
+			<div class="no-copy">
 				"I'm sick of this ##%@*<span class="emphasized">*</span> Olivia Rodrigo song!"<br>
 				"Someone told me to Google this rule because I didn't think pawns could capture like that... holy #^&@<span class="emphasized">&</span>&@^*!"<br>
 				"I can never think of comebacks until it's too #&&&$*#<span class="emphasized">#</span>%#&@@%$#& late!"<br>
@@ -57,9 +73,19 @@
 				"I told my personal assistant I only want garments that &&<span class="emphasized">#</span>*@&^&*#& AREN'T made-to-measure!"<br>
 				"The government's <span class="emphasized">%</span>@$&&#(#@$&# policy gives too much free rein to the free market!"<br>
 				"To all the haters: I can do whatever I @@&*#@<span class="emphasized">%</span>@^@$# want!"<br><br><br>
+			</div>
 				<h4>*$# &@^&(#&  *^  *$$&  &*((%#  $&  *$#  #&#^@$  ##&@&*^#^*  ^@^##  <span class="emphasized">^@(^**#</span></h4>
+
 			</div>
 		</div>
+
+		<button id="clipboard-button">
+	      <div>
+	        <span id="clipboard-message">Copy to clipboard</span>
+	      </div>
+
+		<textarea id="clipboard-contents" readonly></textarea>
+
 		<div class="row footer-row"></div>
 	</div>
 	
@@ -75,5 +101,6 @@
 
 	<!-- own js files -->
 	<script src="js/main.js"></script>
+	<script src="js/clipboard.js"></script>
 	</body>
 </html>
