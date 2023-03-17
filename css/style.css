@@ -1,5 +1,6 @@
 body {
     padding: 0vh
+    background-color: #404E5C;
 }
 
 .container-fluid {
@@ -57,4 +58,8 @@ a {
     position:fixed;
     bottom:20px;
     right:20px;
+}
+
+img {
+    width: 50%;
 }
