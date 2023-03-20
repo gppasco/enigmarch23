@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The Obligatory Fishing Minigame</title>
+
+		<!-- Load CSS libraries -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+
+		<!-- GOOGLE FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,300italic' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+	<div class="container-fluid">
+		<div class="row justify-content-center header-row">
+			<div class="align-self-center">
+				<h1>The Obligatory Fishing Minigame</h1>
+			</div>
+		</div>
+		<div class="row mid-row">
+			<div class="col-12">
+				<div class="row justify-content-center search-row">
+					<div class="align-self-center">
+						Interactive game! This is very in the spirit of "code-it-in-one-day" so many parts of the code are thrown together. For the spirit of the game, don't look at the source code! (Also, if a word doesn't return a response, it's not in the dictionary—one day I'll put the time into making it send a little error message, but I have work tomorrow and you know how it is)
+						<br><br>
+						<a href="https://www.callingit.in/1/#Uwo3c/v8tEASeA4q-Pn81Sm70kExn/XGCieECtxKr7wHOPQcq-VGhlIE9ibGlnYXRvcnkgRmlzaGluZyBNaW5pZ2FtZQ==-" target="_blank">Answer Checker</a>
+						<br><br>
+						<a href="index.html">Back to Main Page</a>
+					</div>
+				</div>
+				<hr>
+			</div>
+			<div class="col-12 puzzle-content-centered">
+				<div class="col-12" ><i>Let's catch some fish! Put some bait on your lines, and see what you reel in!</i><br><br>
+
+				<div id="practice-input"><b>CHOOSE YOUR BAIT:</b> <br>
+					<input id="input-textbox" type="text">
+					<button id="submit">Fish!</button><br><br>
+					<span id="communiques"></span>
+				</div>
+			</div>
+		</div>
+			<div class="col-12 puzzle-content">
+
+				<br><br>
+				Once you're a fishing master, try to catch these, one by one: <br>
+				3🐟	0🥫,&nbsp
+3🐟	0🥫,&nbsp
+2🐟	0🥫,&nbsp
+3🐟	0🥫,&nbsp
+2🐟	0🥫,&nbsp
+1🐟	0🥫,&nbsp
+4🐟	0🥫,&nbsp
+4🐟	0🥫&nbsp
+	&nbsp&nbsp
+2🐟	1🥫,&nbsp
+4🐟	0🥫,&nbsp
+1🐟	1🥫,&nbsp
+0🐟	1🥫,&nbsp
+2🐟	1🥫,&nbsp
+2🐟	0🥫&nbsp
+
+
+				 
+				<hr>
+					Past guesses:
+				<div id="results-span">
+						<ul id="myList">
+						</ul>
+				</div><br><br><br><br><br><br><br><br>
+		</div><br>
+
+		<div class="row footer-row"></div>
+	</div>
+	
+
+
+	<!-- embedding JS libraries -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<!-- d3 -->
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+
+	<!-- own js files -->
+	<script src="js/main.js"></script>
+	<script src="js/fishing.js"></script>
+	</body>
+</html>
