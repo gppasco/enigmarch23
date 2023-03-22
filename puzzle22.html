@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Puzzle of the Future</title>
+
+		<!-- Load CSS libraries -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+
+		<!-- GOOGLE FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,300italic' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+	<div class="container-fluid">
+		<div class="row justify-content-center header-row">
+			<div class="align-self-center">
+				<h1>Puzzle of the Future</h1>
+			</div>
+		</div>
+		<div class="row mid-row">
+			<div class="col-12">
+				<div class="row justify-content-left search-row">
+					<div class="align-self-center">
+						Can you say magnum opus? 
+						<br><br>
+						<a href="https://www.callingit.in/1/#SZx5fHFelIQ9GqTl-eOgMKgRjTDJOfgShx5czfIRdiKlxZ1xu-UHV6emxlIG9mIHRoZSBGdXR1cmU=-" target="_blank">Answer Checker</a>
+						<br><br>
+						<a href="index.html">Back to Main Page</a>
+					</div>
+				</div>
+				<hr>
+			</div>
+			<div class="col-12 puzzle-content" id="puzzle-contents-copyable">
+				<div class="col-12" style="display:flex; justify-content:center"><i>You see a vision into the future of this hunt:<br></i> <br><br></div>
+						<div class="col-12" style="display:flex; justify-content:center"><h2>Puzzle of the Future (SOLUTION)</h2></div><br>
+This puzzle is a standard "take the string and follow the instructions to transform it" puzzle, with a twist: for some instructions, you have to solve a puzzle to get the instruction! The basic transformations are as follows: <br><br>
+
+				<li>The last word of the initial string is a metal. Replace it with its two-letter chemical symbol. </li>
+<li>The two spot-the-difference pictures only have one difference: there's a sofa missing. This is a clue that you should remove SOFA from the string.</li>
+<li>The middle two letters of the string belong to an ordered set (we all know what the set is, so I won't waste time by naming it here); as directed, change it to the item two later in the set. There's some disagreement on if the name of the new item is two or three letters wrong. This puzzle uses the three-letter spelling, of course.</li>
+<li>Folding the origami according to the audio instructions, we spell letterforms indicating that we need to move the first letter of the string to the end. </li>
+<li>The clips of nature documentaries on Telemundo are a subtle clue that you should change the three-letter Spanish animal name to its four-letter English translation. </li>
+<li>Playing through this interactive game, you meet Petey the P-Wizard! Once you collect enough Orbs to power his brews, he gives you a P as a souvenir, which you add to your string. That P's your new best friend—why not get to know it a little?</li>
+<li>The manga has the bolded line of dialogue "Uh oh! You lost a PEARL!" This is a subtle clue that you should remove the word PEARL from the string. I know, that kills the P you just added, but that's the way it goes sometimes.</li>
+<li>Watching the tap-dancing video, and encoding the steps as Morse based on the volume of the taps, we spell the instruction SWITCH THE TWO LETTERS THAT SHOW UP IN ROYGBIV. Do that!</li>
+<li>Once the solver proves one of the Millennium problems and submits proof to the Clay Mathematics Institute, the letter of congratulations they receive will have bolded letters spelling "The middle two letters spell a direction. Turn that direction by 180 degrees." (Thanks for the Clay Mathematics Institute for their cooperation with this puzzle!)</li>
+<li>The Cameo video by David Lynch, at first, seems quite complicated. However, nothing about the Cameo matters except the last sentence: turn the fourth letter upside-down.</li>
+<li>The middle two letters are a state abbreviation. As directed, replace the two letters of the abbreviation with the first letter of the state to its left, and the first letter of the state above it, in that order. (NOTE: The result can be read as a garment, plus a feature of that garment. You might be tempted to call in the garment as the answer, but do NOT! There are two more steps to follow!)</li>
+<li>This one's the physical puzzle! Once you enter your address into the box, pay for shipping, wait the 6-8 business weeks for delivery, open the package, and assemble the jigsaw puzzle, you can read: "Shift the second letter back seven places in the alphabet."</li>
+<li>As a cooldown, this one just gives you the instruction: we have to move the second letter to a different place in the string such that it's alphabetically between the letters immediately before and after it. Note that this is the only place in the string where this can happen, so this unambiguously gives the answer, <b>BACK UP</b>.</li> <br><br>
+<b>AUTHOR'S NOTES</b>: I spent a few thousands of dollars of my own money on this puzzle (considering the Cameo, the custom-made jigsaws for every solver, and the game developers/artists/creative leads/spokespeople/social media interns for the Petey the P-Wizard game, not to mention licensing rights for Petey the P-Wizard merchandise), but it makes every penny worth it to think about the end product. I mean it when I say that this puzzle is the only thing I want my legacy to be, and I'm glad you got to see it and solve it. :)
+<br><br><br>
+			</div>
+		</div>
+
+		<button id="clipboard-button">
+	      <div>
+	        <span id="clipboard-message">Copy to clipboard</span>
+	      </div>
+
+		<textarea id="clipboard-contents" readonly></textarea>
+		<div class="row footer-row"></div>
+	</div>
+	
+
+
+	<!-- embedding JS libraries -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<!-- d3 -->
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+
+	<!-- own js files -->
+	<script src="js/main.js"></script>
+	<script src="js/clipboard.js"></script>
+	</body>
+</html>
