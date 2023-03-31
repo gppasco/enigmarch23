@@ -3,6 +3,15 @@ body {
     background-color: #404E5C;
 }
 
+.spoilered {
+    background-color:black;
+    color: black;
+}
+
+.spoilered:hover{
+    background-color: #CFD7DE;
+}
+
 .container-fluid {
     border: thin solid grey;
     border-radius: 5px
